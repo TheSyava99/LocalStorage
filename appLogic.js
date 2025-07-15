@@ -48,6 +48,13 @@ userData.onsubmit = e => {
     selectedEducation,
     selectedPositions
   );
+  if (!navigator.onLine) {
+    console.log("Офлайн: зберігаємо дані в LocalStorage");
+    users.push(newUser);
+    localStorage.setItem("users", JSON.stringify(users));
+  } else {
+    console.log("Онлайн: надсилаємо дані на сервер (імітація):", newUser);
+  }
 
   createUserElement(newUser);
   updateClearBtnText();
@@ -100,7 +107,6 @@ window.addEventListener("online", () => {
   }
 });
 
-// Дропдауни: відкриття / закриття
 document.querySelectorAll('.dropdown').forEach(dropdown => {
   dropdown.addEventListener('click', () => {
     dropdown.classList.toggle('active');
@@ -112,3 +118,4 @@ document.querySelectorAll('.dropdown').forEach(dropdown => {
     }
   });
 });
+

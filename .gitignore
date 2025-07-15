@@ -1,0 +1,14 @@
+# macOS system file
+.DS_Store
+# macOS
+.DS_Store
+# Node/npm 
+node_modules/
+npm-debug.log*
+# IDE/Editor
+.vscode/
+.idea/
+*.log
+# System
+Thumbs.db
+Desktop.ini
