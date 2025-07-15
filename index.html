@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LocalStorage User Form</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <main>
+    <form id="userData">
+      <input type="text" placeholder="Enter your first name" name="firstname" required />
+      <input type="text" placeholder="Enter your last name" name="lastname" required />
+      <input type="number" placeholder="Enter your age" name="age" required />
+
+      <div class="dropdown" id="educationDropdown">
+        <div class="dropdown-label">Select the course you have completed</div>
+        <div class="dropdown-options">
+          <label><input type="checkbox" value="Full Stack JavaScript Developer">Full Stack JavaScript Developer</label>
+          <label><input type="checkbox" value="Full Stack Python/React Developer">Full Stack Python/React Developer</label>
+          <label><input type="checkbox" value="Java Backend Developer">Java Backend Developer</label>
+          <label><input type="checkbox" value="AI Development Fundamentals">AI Development Fundamentals </label>
+          <label><input type="checkbox" value="Full Stack .NET/React">Full Stack .NET/React</label>
+        </div>
+      </div>
+
+      <div class="dropdown" id="roleDropdown">
+        <div class="dropdown-label">Select the vacancy you would like to apply for</div>
+        <div class="dropdown-options">
+          <label><input type="checkbox" value="Frontend Developer">Frontend Developer</label>
+          <label><input type="checkbox" value="Backend Developer">Backend Developer</label>
+          <label><input type="checkbox" value="Fullstack Developer">Fullstack Developer</label>
+          <label><input type="checkbox" value="AI Developer">AI Developer</label>
+        </div>
+      </div>
+
+      <button>Add User</button>
+    </form>
+
+    <button id="clearUsersBtn">Clear Users</button>
+
+    <div class="users"></div>
+  </main>
+
+  <script src="appLogic.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-image: url("/images/website-pr-contact-us.png");
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: -130px center;
+    min-height: 100vh;
+  }
+  
+  main {
+    width: 30%;
+    margin: 15px auto 0;
+  }
+  
+  #userData {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #2c1d4aee;
+    border-radius: 15px;
+    backdrop-filter: blur(6px);
+  }
+  
+  #userData * {
+    margin: 7px;
+    padding: 7px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input */
+  #userData input {
+    border: 2px solid #5ecfff;
+    background-color: #ffffffcc;
+    color: #000;
+  }
+  
+  #userData input::placeholder {
+    color: #333;
+  }
+  
+  #userData input:focus {
+    border: 2px solid #03d7fc;
+    background-color: #ffffffee;
+  }
+  
+  /* Dropdowns */
+  .dropdown {
+    position: relative;
+    border: 2px solid #5ecfff;
+    background-color: #ffffffcc;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .dropdown-label {
+    pointer-events: none;
+    
+  }
+  
+  .dropdown-options {
+    display: none;
+    flex-direction: column;
+    margin-top: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .dropdown.active .dropdown-options {
+    display: flex;
+  }
+  
+  .dropdown-options label {
+    font-size: 1rem;
+    margin: 3px 0;
+    cursor: pointer;
+  }
+  
+  /* Buttons */
+  #userData button {
+    outline: none;
+    background-color: #1ac8ed;
+    color: white;
+    border: 3px solid transparent;
+    cursor: pointer;
+  }
+  
+  #userData button:active {
+    border-color: #03d7fc;
+  }
+  
+  #clearUsersBtn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #clearUsersBtn:hover {
+    background-color: #ff5c5c;
+  }
+  
+  /* User block */
+  .users {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid gray;
+    background-color: #f3e8ff;
+    color: #2f2f2f;
+    border-radius: 15px;
+  }
+  
+  .users div {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .users div * {
+    margin: 5px;
+  }
+  
